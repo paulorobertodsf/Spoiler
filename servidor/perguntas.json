@@ -1,0 +1,44 @@
+[
+    {
+        "pergunta": "Qual o nucleo da varinha do Harry Potter?",
+        "opcoes": [
+            {
+                "opcao": "Nucleo de pelo de unicornio",
+                "correta": false
+            },
+            {
+                "opcao": "Nucleo de Cordas coração de dragão",
+                "correta": false
+            },
+            {
+                "opcao": "Nucleo de pena de fenix",
+                "correta": true
+            },
+            {
+                "opcao": "Nucleo de lasca de golem",
+                "correta": false
+            }
+        ]
+    },
+    {
+        "pergunta": "Qual a cor do sabre de luz do Obi Wan Kenobi",
+        "opcoes": [
+            {
+                "opcao": "Azul",
+                "correta": true
+            },
+            {
+                "opcao": "Verde",
+                "correta": false
+            },
+            {
+                "opcao": "Vermelho",
+                "correta": false
+            },
+            {
+                "opcao": "Roxo",
+                "correta": false
+            }
+        ]
+    }
+]
