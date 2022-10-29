@@ -1,20 +1,23 @@
-function fetchPerguntas() {
+async function fetchPerguntas() {
     const URL = 'http://127.0.0.1:3000/perguntas'
-    fetch(URL)
+    await fetch(URL)
     .then(res => {
         res.json()
         .then(perg => {
+            console.log('Chamou fetchPerguntas')
             sorteiaPergunta(perg)
         })
     })
 }
 
 function sorteiaPergunta(perg) {
+    console.log('Chamou sorteia pergunta')
     var num_random = numRandom(perg.length)
     adicionaPergunta(perg[num_random])
 }
 
 function adicionaPergunta(perg) {
+    console.log('Chamou adicionaPerguntas')
     let opc_correta = ''
     const titulo = document.querySelector('#pergunta')
     titulo.textContent = perg.pergunta
@@ -26,7 +29,8 @@ function adicionaPergunta(perg) {
         if (perg.opcoes[opc].correta) {
             opc_correta = perg.opcoes[opc].opcao
         }
-        opcoes[opc].addEventListener('click', (obj) => {
+        
+        opcoes[opc].onclick = (obj) => {
             if (obj.target.textContent == opc_correta) {
                 const spoiler = document.querySelector('#spoiler')
                 spoiler.textContent = ''
@@ -34,7 +38,7 @@ function adicionaPergunta(perg) {
             } else {
                 addSpoiler()
             }
-        })
+        }
     }
 }
 

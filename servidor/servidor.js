@@ -20,4 +20,6 @@ app.get('/spoilers', (req, res) => {
   res.json(spoilers)
 })
 
-app.listen(3000)
+app.listen(3000, () => {
+  console.log('SERVIDOR LIGADO')
+})

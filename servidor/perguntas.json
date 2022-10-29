@@ -7,7 +7,7 @@
                 "correta": false
             },
             {
-                "opcao": "Nucleo de Cordas coração de dragão",
+                "opcao": "Nucleo de cordas cora\u00e7\u00e3o de drag\u00e3o",
                 "correta": false
             },
             {
@@ -37,6 +37,27 @@
             },
             {
                 "opcao": "Roxo",
+                "correta": false
+            }
+        ]
+    },
+    {
+        "pergunta": "Qual jogo \u00e9 da Riot Games",
+        "opcoes": [
+            {
+                "opcao": "Heroes of the storm",
+                "correta": false
+            },
+            {
+                "opcao": "Titanfall",
+                "correta": false
+            },
+            {
+                "opcao": "Tellstones",
+                "correta": true
+            },
+            {
+                "opcao": "Overwatch 2",
                 "correta": false
             }
         ]
