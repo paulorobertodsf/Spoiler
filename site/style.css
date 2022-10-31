@@ -3,30 +3,27 @@
     font-family: cabin;
     src: url(CabinSketch-Regular.ttf);
 }
-h1{
-    text-align: center;
-    font-size: 12vh;
-}
 body{
     background-color: #FFE4E1;
     margin: 0%;
     font-family: cabin;
 }
-#titulo{
+#titulo {
+    text-align: center;
+    font-size: 5em;
     box-sizing: content-box;
     background-color: #D2B48C;
     margin: 0%;
     border-bottom-right-radius:100px ;
     border-bottom-left-radius:100px ;
 }
-#pergunta{
+#pergunta {
+    font-size: 3.5em;
     text-align: center;
 }
-h2{
-    text-align: center;
-    font-size: 10vh;
-}
-.opcao{
+
+.opcao {
+    font-size: 2em;
     background-color: #D2B48C;
     box-sizing: border-box;
     padding: 25px;
@@ -35,16 +32,13 @@ h2{
     border-radius: 18px;
     cursor: pointer;
 }
-ul{
+#lista {
     list-style-type:none;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 40vw 40vw;
     justify-content: center;
 }
-li{
-    font-size: 5vh;
-    text-align: center;
-}
+
 .opcao:hover{
     background-color: #a7855a;
 }
