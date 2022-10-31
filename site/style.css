@@ -3,11 +3,13 @@
     font-family: cabin;
     src: url(CabinSketch-Regular.ttf);
 }
+
 body{
     background-color: #FFE4E1;
     margin: 0%;
     font-family: cabin;
 }
+
 #titulo {
     text-align: center;
     font-size: 5em;
@@ -40,4 +42,12 @@ body{
 
 .opcao:hover{
     background-color: #a7855a;
+}
+
+#swal2-html-container {
+    font-size: 3em;
+}
+
+.swal2-confirm {
+    font-size: 2em !important;
 }

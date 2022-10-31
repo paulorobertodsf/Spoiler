@@ -1,3 +1,5 @@
+let num_anterior = -1
+
 async function fetchPerguntas() {
     const URL = 'http://10.0.0.179:3000/perguntas'
     await fetch(URL)
@@ -10,7 +12,11 @@ async function fetchPerguntas() {
 }
 
 function sorteiaPergunta(perg) {
-    var num_random = numRandom(perg.length)
+    let num_random = numRandom(perg.length)
+    while (num_random == num_anterior) {
+        num_random = numRandom(perg.length)
+    }
+    num_anterior = num_random
     adicionaPergunta(perg[num_random])
 }
 
@@ -33,7 +39,12 @@ function adicionaPergunta(perg) {
                 spoiler.textContent = ''
                 fetchPerguntas()
             } else {
-                addSpoiler()
+                Swal.fire({
+                    text: spoilers[numRandom(spoilers.length)],
+                    confirmButtonText: 'Ok',
+                    confirmButtonColor: '#D2B48C',
+                    
+                })
             }
         }
     }
@@ -56,10 +67,6 @@ function fetchSpoilers() {
     })
 }
 
-function addSpoiler() {
-    const spoiler = document.querySelector('#spoiler')
-    spoiler.textContent = spoilers[numRandom(spoilers.length)]
-}
 
 fetchSpoilers()
 fetchPerguntas()
