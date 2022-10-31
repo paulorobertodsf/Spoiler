@@ -13,7 +13,7 @@ layout = [
             [sg.Button('Ok')] 
 ]
 
-window = sg.Window('Se errar, você leva spoiler', layout)
+window = sg.Window('Se você errar, leva spoiler', layout)
 perguntas = []
 
 try:

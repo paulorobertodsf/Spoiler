@@ -21,7 +21,7 @@
         ]
     },
     {
-        "pergunta": "Qual a cor do sabre de luz do Obi Wan Kenobi",
+        "pergunta": "Qual a cor do sabre de luz do Obi Wan Kenobi?",
         "opcoes": [
             {
                 "opcao": "Azul",
@@ -42,7 +42,7 @@
         ]
     },
     {
-        "pergunta": "Qual jogo \u00e9 da Riot Games",
+        "pergunta": "Qual jogo \u00e9 da Riot Games?",
         "opcoes": [
             {
                 "opcao": "Heroes of the storm",
