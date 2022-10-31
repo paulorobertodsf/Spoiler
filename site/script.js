@@ -1,5 +1,5 @@
 async function fetchPerguntas() {
-    const URL = 'http://127.0.0.1:3000/perguntas'
+    const URL = 'http://10.0.0.179:3000/perguntas'
     await fetch(URL)
     .then(res => {
         res.json()
@@ -46,7 +46,7 @@ function numRandom(limite) {
 let spoilers = []
 
 function fetchSpoilers() {
-    const URL = 'http://127.0.0.1:3000/spoilers'
+    const URL = 'http://10.0.0.179:3000/spoilers'
     fetch(URL)
     .then(res => {
         res.json()
