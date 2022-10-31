@@ -16,8 +16,13 @@ layout = [
 window = sg.Window('Se errar, você leva spoiler', layout)
 perguntas = []
 
-with open('./servidor/perguntas.json', 'r', encoding='UTF8') as file:
-    perguntas = json.loads(file.read())
+try:
+    with open('./servidor/perguntas.json', 'r', encoding='UTF8') as file:
+        perguntas = json.loads(file.read())
+
+except:
+    with open('./servidor/perguntas.json', 'w', encoding='UTF8') as file:
+        file.write('[]')
 
 while True:
     event, values = window.read()
@@ -37,7 +42,7 @@ while True:
         
         perguntas.append(obj_pergunta)
 
-        with open('./servidor/perguntas.json', 'w', encoding='UTF8') as file:
+        with open('./perguntas.json', 'w', encoding='UTF8') as file:
             file.write(json.dumps(perguntas))
 
         print(f'Pergunta: {obj_pergunta["pergunta"]}')

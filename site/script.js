@@ -4,20 +4,17 @@ async function fetchPerguntas() {
     .then(res => {
         res.json()
         .then(perg => {
-            console.log('Chamou fetchPerguntas')
-            sorteiaPergunta(perg)
+           sorteiaPergunta(perg)
         })
     })
 }
 
 function sorteiaPergunta(perg) {
-    console.log('Chamou sorteia pergunta')
     var num_random = numRandom(perg.length)
     adicionaPergunta(perg[num_random])
 }
 
 function adicionaPergunta(perg) {
-    console.log('Chamou adicionaPerguntas')
     let opc_correta = ''
     const titulo = document.querySelector('#pergunta')
     titulo.textContent = perg.pergunta

@@ -49,12 +49,12 @@
                 "correta": false
             },
             {
-                "opcao": "Titanfall",
-                "correta": false
-            },
-            {
                 "opcao": "Tellstones",
                 "correta": true
+            },
+            {
+                "opcao": "Titanfall",
+                "correta": false
             },
             {
                 "opcao": "Overwatch 2",
