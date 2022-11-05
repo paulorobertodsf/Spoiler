@@ -42,7 +42,7 @@ while True:
         
         perguntas.append(obj_pergunta)
 
-        with open('./perguntas.json', 'w', encoding='UTF8') as file:
+        with open('./servidor//perguntas.json', 'w', encoding='UTF8') as file:
             file.write(json.dumps(perguntas))
 
         print(f'Pergunta: {obj_pergunta["pergunta"]}')

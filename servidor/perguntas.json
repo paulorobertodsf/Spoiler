@@ -61,5 +61,68 @@
                 "correta": false
             }
         ]
+    },
+    {
+        "pergunta": "Qual desses n\u00e3o \u00e9 um vil\u00e3o do Batman",
+        "opcoes": [
+            {
+                "opcao": "Bane",
+                "correta": false
+            },
+            {
+                "opcao": "Hera Venenosa",
+                "correta": false
+            },
+            {
+                "opcao": "Espantalho",
+                "correta": false
+            },
+            {
+                "opcao": "Galactus",
+                "correta": true
+            }
+        ]
+    },
+    {
+        "pergunta": "Qual a primeira joia do infinito que o Thanos pega?",
+        "opcoes": [
+            {
+                "opcao": "Mente",
+                "correta": false
+            },
+            {
+                "opcao": "Poder",
+                "correta": false
+            },
+            {
+                "opcao": "Alma",
+                "correta": false
+            },
+            {
+                "opcao": "Espa\u00e7o",
+                "correta": true
+            }
+        ]
+    },
+    {
+        "pergunta": "Qual a fraqueza dos monstros em um lugar silencioso?",
+        "opcoes": [
+            {
+                "opcao": "Degolamento",
+                "correta": false
+            },
+            {
+                "opcao": "Aparelho auditivo",
+                "correta": true
+            },
+            {
+                "opcao": "Fogo",
+                "correta": false
+            },
+            {
+                "opcao": "Balas de prata",
+                "correta": false
+            }
+        ]
     }
 ]

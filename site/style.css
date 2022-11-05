@@ -19,6 +19,7 @@ body{
     border-bottom-right-radius:100px ;
     border-bottom-left-radius:100px ;
 }
+
 #pergunta {
     font-size: 3.5em;
     text-align: center;
@@ -36,7 +37,7 @@ body{
 #lista {
     list-style-type:none;
     display: grid;
-    grid-template-columns: 40vw 40vw;
+    grid-template-columns: 50% 50%;
     justify-content: center;
 }
 
@@ -45,9 +46,28 @@ body{
 }
 
 #swal2-html-container {
-    font-size: 3em;
+    font-size: 2em;
 }
 
 .swal2-confirm {
-    font-size: 2em !important;
+    font-size: 1.3em !important;
+}
+
+.swal2-popup {
+    width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+    #lista {
+        grid-template-columns: 100%;
+    }
+    #swal2-html-container {
+        font-size: 3em;
+    }
+    .swal2-confirm {
+        font-size: 2em !important;
+    }
+    .swal2-popup {
+        width: fit-content;
+    }
 }
